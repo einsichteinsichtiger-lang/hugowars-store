@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090d18">
+<meta name="description" content="The official HugoWars Rank Store. Find the rank that fits your playstyle.">
+<title>Ranks | HugoWars Store</title>
+<style>
+:root{--bg:#090d18;--panel:#111a2c;--line:#293653;--text:#f4f7ff;--muted:#a9b6ce;--purple:#9b5cff;--cyan:#4ce5e8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#29305c 0,transparent 55%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1080px,92%);margin:auto}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}.brand{display:flex;align-items:center;gap:11px;font-weight:950;letter-spacing:.6px}.logo{width:39px;height:39px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(135deg,var(--purple),#5d5aff);box-shadow:0 6px 24px #8d51ff55;font-size:1.2rem}.brand-name span{color:var(--cyan)}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:white}.pill{border:1px solid #4ce5e84a;border-radius:999px;padding:9px 13px;color:var(--cyan);font-size:.78rem;font-weight:800}
+.hero{text-align:center;padding:82px 0 55px}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #9b5cff55;background:#9b5cff12;color:#d9c4ff;border-radius:999px;padding:8px 13px;font-size:.76rem;font-weight:850;letter-spacing:1.4px}.dot{width:7px;height:7px;border-radius:50%;background:#59f2a4;box-shadow:0 0 12px #59f2a4}.hero h1{font-size:clamp(2.8rem,8vw,5.5rem);line-height:1;letter-spacing:-.065em;margin:25px 0 18px;font-weight:1000}.gradient{background:linear-gradient(95deg,#b48aff 10%,#67e8f9 90%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:600px;margin:auto;color:var(--muted);font-size:1.06rem;line-height:1.75}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 18px;border-radius:12px;font-weight:850;border:1px solid transparent;cursor:pointer;transition:transform .18s,filter .18s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.primary{background:linear-gradient(110deg,#a56bff,#625bff);box-shadow:0 10px 30px #8655ff38;color:white}.secondary{border-color:var(--line);background:#ffffff06}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+.section{padding:28px 0 72px}.heading{text-align:center;margin-bottom:30px}.kicker{font-size:.75rem;color:var(--cyan);font-weight:900;text-transform:uppercase;letter-spacing:2px}.heading h2{font-size:clamp(1.8rem,4vw,2.5rem);margin:9px 0}.heading p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{position:relative;background:linear-gradient(160deg,#172139,#0f1524 70%);border:1px solid var(--line);border-radius:20px;padding:25px;min-height:320px;display:flex;flex-direction:column;overflow:hidden}.card.featured{border-color:#a16aff;box-shadow:0 0 0 1px #a16aff25,0 18px 50px #0003}.tag{position:absolute;right:15px;top:15px;border-radius:999px;background:#9b5cff24;color:#decaff;border:1px solid #9b5cff55;padding:6px 9px;font-size:.66rem;font-weight:900;text-transform:uppercase;letter-spacing:.7px}.rank-icon{font-size:2.4rem;margin:3px 0 15px}.card h3{font-size:1.3rem;margin:0 0 8px}.card p{color:var(--muted);line-height:1.65;font-size:.92rem;margin:0 0 20px}.perks{list-style:none;padding:0;margin:0 0 22px;color:#d9e2f5;font-size:.88rem;line-height:1.9}.perks li:before{content:"✓";color:var(--cyan);font-weight:900;margin-right:9px}.price{font-size:1.8rem;font-weight:950;margin-top:auto;margin-bottom:14px}.price small{font-size:.78rem;color:var(--muted);font-weight:600}.card .btn{width:100%;padding:12px}.notice{margin:20px auto 0;max-width:800px;text-align:center;color:#8290aa;font-size:.81rem;line-height:1.65}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{border:1px solid #ffffff12;background:#ffffff04;padding:22px;border-radius:16px}.num{display:grid;place-items:center;width:35px;height:35px;border-radius:11px;background:#9b5cff1f;color:#c9aaff;font-weight:950}.step b{display:block;margin:12px 0 6px}.step p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.6}footer{border-top:1px solid #ffffff12;padding:25px 0 35px;color:var(--muted);font-size:.83rem}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:760px){.navlinks{display:none}.hero{padding:62px 0 45px}.cards,.steps{grid-template-columns:1fr}.card{min-height:unset}.foot{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="wrap"><nav>
+<a class="brand" href="#"><span class="logo">⚔</span><span class="brand-name">HUGO<span>WARS</span></span></a>
+<div class="navlinks"><a href="#ranks">Ranks</a><a href="#how">How It Works</a><a href="#support">Support</a></div>
+<a class="pill" href="#ranks">OFFICIAL STORE</a>
+</nav></header>
+<main class="wrap">
+<section class="hero">
+<div class="eyebrow"><span class="dot"></span> THE OFFICIAL HUGOWARS STORE</div>
+<h1>Find Your<br><span class="gradient">Rank.</span></h1>
+<p>Choose your HugoWars rank and support the server. Check out each rank's perks and price, then get ready for your next fight.</p>
+<div class="actions"><a class="btn primary" href="#ranks">Explore Ranks ↓</a><a class="btn secondary" href="#how">How It Works</a></div>
+</section>
+<section class="section" id="ranks">
+<div class="heading"><div class="kicker">Your Next Upgrade</div><h2>HugoWars <span class="gradient">Ranks</span></h2><p>Choose a rank to view its package in the Tebex store.</p></div>
+<div class="cards">
+<article class="card">
+<div class="rank-icon">✦</div><h3>Hugo</h3><p>Your entry into the HugoWars rank lineup.</p><ul class="perks"><li>In-game server rank</li><li>Add your rank perks here</li><li>Made for HugoWars players</li></ul><div class="price">€X.XX <small>/ one-time</small></div><a class="btn secondary tebex-link" href="https://YOUR-STORE.tebex.io/" target="_blank" rel="noopener noreferrer">View on Tebex ↗</a>
+</article>
+<article class="card featured">
+<div class="tag">Popular</div><div class="rank-icon">⚡</div><h3>Warrior</h3><p>A special rank for active HugoWars players.</p><ul class="perks"><li>In-game server rank</li><li>Add your rank perks here</li><li>Made for real fighters</li></ul><div class="price">€X.XX <small>/ one-time</small></div><a class="btn primary tebex-link" href="https://YOUR-STORE.tebex.io/" target="_blank" rel="noopener noreferrer">View on Tebex ↗</a>
+</article>
+<article class="card">
+<div class="rank-icon">👑</div><h3>Legend</h3><p>A premium rank for players who want to support HugoWars.</p><ul class="perks"><li>In-game server rank</li><li>Add your rank perks here</li><li>Premium package</li></ul><div class="price">€X.XX <small>/ one-time</small></div><a class="btn secondary tebex-link" href="https://YOUR-STORE.tebex.io/" target="_blank" rel="noopener noreferrer">View on Tebex ↗</a>
+</article>
+</div>
+<p class="notice">Before publishing, replace the example rank names, prices, perks, and Tebex URL with your real store details. These links are placeholders and do not process purchases yet.</p>
+</section>
+<section class="section" id="how">
+<div class="heading"><div class="kicker">Easy & Convenient</div><h2>How It Works</h2><p>Your rank purchase in three simple steps.</p></div>
+<div class="steps">
+<div class="step"><span class="num">01</span><b>Choose a Rank</b><p>Pick the rank you want and open its package in your Tebex store.</p></div>
+<div class="step"><span class="num">02</span><b>Pay Through Tebex</b><p>Tebex handles checkout. Configure your prices and available payment methods there.</p></div>
+<div class="step"><span class="num">03</span><b>Receive Your Rank</b><p>Connect your Minecraft server and configure the package command to grant the rank after purchase.</p></div>
+</div>
+</section>
+<section class="section" id="support" style="padding-top:0">
+<div class="heading"><div class="kicker">Support</div><h2>Need Help?</h2><p>Replace this button with your HugoWars Discord invite link.</p><div class="actions"><a class="btn secondary" href="https://discord.com/" target="_blank" rel="noopener noreferrer">Open Discord ↗</a></div></div>
+</section>
+</main>
+<footer><div class="wrap foot"><div>© <span id="year"></span> HugoWars Store</div><div>Imprint · Privacy Policy · Terms: add your legal pages before launch</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
